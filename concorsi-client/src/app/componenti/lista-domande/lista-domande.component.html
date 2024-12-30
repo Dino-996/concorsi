@@ -1,0 +1,11 @@
+<div
+    class="overlay position-fixed top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 d-flex justify-content-center align-items-center text-white">
+    <div class="card p-4" style="width: 90%;">
+        <h3>Dettagli Utente</h3>
+        <p><strong>Codice:</strong> {{ concorsoSelezionato!.codice }}</p>
+        <p><strong>Data:</strong> {{ concorsoSelezionato!.dataOra | date: 'dd/MM/yyyy HH:mm' }}</p>
+        <div>
+            <button class="btn btn-danger" (click)="notificaModifica()">Chiudi</button>
+        </div>
+    </div>
+</div>
